@@ -11,29 +11,21 @@ int main(){
 		
 	}
 	vector<vector<int>> dp(n+1, vector<int>(n+1, 0));
-	for(int i = 0; i < n; i++){
-		dp[i][1] = nums[i];
-	}
-	for(int i = 2; i <=n; i++){
-		for(int j = 0; j <= n-i; j++){
-			int m = 0;
-			for(int k = 1; k < i; k++){
-//				cout<<i<<" "<<j<<" "<<k<<" "<<j+k<<" "<<i-k<<'\n';
-				m = max(max(dp[j][k], dp[j+k][i-k]), m);
-				if(dp[j][k] == dp[j+k][i-k]){
-					m = max(dp[j][k]+1, m);
+	int result = 0;
+	for(int l = 1; l <=n; l++){
+		for(int s = 0; s + l <= n; s++){
+			int j = s+l-1;
+			dp[s][j] = -1;
+			if(l == 1){
+				dp[s][j] = nums[s];
+			}
+			for(int k = s; k < j; k++){
+				if(dp[s][k] == dp[k+1][j] && dp[s][k] > 0){
+						dp[s][j] = max(dp[s][j], dp[s][k] + 1);
 				}
 			}
-			for(int k = 1; k < i; k++){
-//				cout<<i<<" "<<j<<" "<<k<<" "<<j+k<<" "<<i-k<<'\n';
-				m = max(max(dp[j][i-k], dp[j+(i-k)][k]),m);
-				if(dp[j][i-k] == dp[j+(i-k)][k]){
-					m = max(dp[j][i-k]+1, m);
-				}
-			}
-			
-			dp[j][i]=m;
+			result = max(result, dp[s][j]);
 		}
 	}
-	cout<<dp[0][n]<<'\n';
+	cout<<result<<'\n';
 }
