@@ -1,0 +1,4 @@
+distant pastures: 16/18, TLE on last 2 cases
+sweet dreams: 10/10
+revamping trails: 7/11, RTE on 8 & 9, TLE on 10 & 11
+telephone: 13/13
