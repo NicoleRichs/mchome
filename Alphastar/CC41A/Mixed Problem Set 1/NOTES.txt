@@ -1,0 +1,10 @@
+This only took me like 2 days to do, cumulative maybe 3 hours. I already did lasers & mirrors, so I just copy and pasted it here.
+
+cruise was fine, but favoritecolor fails test case 1 and 3. Weird, ik, but pretty sure it's the alphastar grader being weird since 
+my answer for case 1 is correct. Case 3 i don't know the whole input so unable to tell.
+
+Alright cool, seeya
+
+Ethan Pan
+1045PST 06/27/2023
+Irvine Valley College
