@@ -1,0 +1,3 @@
+cowntagion.cpp - the algorithm i got down within a few minutes, it just took me forever to figure out how to implement well. Oh, and I didn't realize that paths 
+didn't have a "direction" so had to account fot that as well. Also learned about the importance of logarithms. 1/26/2022 - 2/10/2022, mostly because i got sick 
+from 2/2/2022 to 2/8/2022, was busy, etc. but is done ayyyy
