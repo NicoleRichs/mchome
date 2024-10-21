@@ -3,7 +3,7 @@ TASK: milk2
 LANG: C++14
 ID: ethanhp1
 */
-//shelved for the time being jk lmao is done, 1/24/2022 to 1/27/2022
+//shelved for the time being jk lmao is done 1/24/2022 to 1/27/2022
 #include <iostream>
 #include <string>
 #include <fstream>
